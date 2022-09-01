@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <!--BARRA DE NAVEGACION-->
+        <div class="nav">
+            <div class="Barra-izq">
+                <ul class="nav-links">
+                    <li><h1 class="nav-title">Perfil</h1></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#" class="active">Mi Perfil</a></li>
+                    <li><a href="#">Encontrar conexiones</a></li>
+                </ul>
+            </div>
+            <div class="Barra-der">
+                <button class="btn">Cerrar sesión</button>
+            </div>
+        </div> 
+    <!--Lo siguiente son bloques de información-->
+    <!--Tarjeta presentación-->
+        <div class="main-menu">
+            <div class="Columna1">
+                <div class="card">
+                    <div class="card-header">
+                        <img class="imagen-usuario"src="images/Perfil.jpg" alt="Imagen de usuario">
+                    </div>
+                    <div class="card-body">
+                        <H1 id = "cambiar">Liliana Guzmán Aguayo</H1>
+                        <h3>
+                            <img class="icono" src="icons/map-marker.png" alt="Mapa">
+                            Santiago, Chile
+                        </h3>
+                        <p>
+                            Ingeniera en Recursos Naturales Renovables <br>
+                            Asistente de investigación GEP
+                        </p>
+                        <p class="editar_perfil">
+                            <a href="#" onclick="introd_nombre()">
+                                <img class="icono" src="icons/gear.png" alt="engrane">Editar perfil
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-education">
+                    <div class="education-header">
+                        Educación
+                    </div>
+                    <div class="education-contenido">
+                        <h2>Ingenieria en Recursos Naturales Renovables</h2>
+                        <h5>Marzo 2014 - Agosto 2021</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="Columna2">
+                <div class="connections-request">
+                    <div class="connections-header">
+                        <div><button class="boton">2+</button></div>
+                        <div><p>Solicitud de conexión</p></div>
+                    </div>
+                    <div class="connections-body">
+                        <ul class="no-amigos">
+                            <li><img src="images/todd-s.jpg" alt="fotoTodd" class="foto"> Todd E
+                                <img src="icons/accept-circle.png" alt="Aceptar solicitud" class="foto_solicitud"> 
+                                <img src="icons/close-circle.png" alt="Rechazar solicitud" class="foto_solicitud">
+                            </li>
+                            <li><img src="images/phil-s.jpg" alt="fotoPhil" class="foto">Phil K
+                                <img src="icons/accept-circle.png" alt="Aceptar solicitud" class="foto_solicitud"> 
+                                <img src="icons/close-circle.png" alt="Rechazar solicitud" class="foto_solicitud">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="your-connections">
+                    <div class="your-connec-header">
+                        <div><button class="boton">500+</button></div>
+                        <div><p>Tus conexiones</p></div>
+                    </div>
+                    <div class="amistades">
+                        <ul class="amigos">
+                            <li><img src="images/adrien-s.jpg" alt="fotoAdrien" class="foto">Adrien D</li>
+                            <li><img src="images/anne-s.jpg" alt="fotoAnne" class="foto">Anne J</li>
+                            <li><img src="images/alayne-s.jpg" alt="fotoAlayne" class="foto">Alayne T</li>
+                            <li><img src="images/arry-s.jpg" alt="fotoArry" class="foto">Arry Y</li>
+                        </ul>
+                    </div>
+                    <div class="ver_mas"><p><a href="#">Ver más</a></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script> 
+</body>
+</html>
